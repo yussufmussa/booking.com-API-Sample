@@ -13,4 +13,8 @@ class Role extends Model
     public function permissions(){
         return $this->belongsToMany(Permission::class);
     }
+
+    const ROLE_ADMINISTRATOR = 1;
+    const ROLE_OWNER = 2;
+    const ROLE_USER = 3;
 }
